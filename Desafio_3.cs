@@ -1,5 +1,9 @@
 // Challenge
-// The months of June and July are traditionally known throughout Brazil for their typical parties, and for Marlene's group of friends it's no different, every second fortnight of July she and her friends get together for traditional manioc! During the festival, Chico, Beto, Bernardo, Marina and Iara always get together at Marlene's house. And as it couldn't be different, the main dish of this meeting is cassava. They each eat one to ten servings of cassava and they always advise Marlene in advance as to how many servings they will be eating that day. The serving sizes of each are different, but they are always the same. The servings are as follows (in grams):
+// The months of June and July are traditionally known throughout Brazil for their typical parties, and for Marlene's group of friends it's no different, 
+// every second fortnight of July she and her friends get together for traditional manioc! During the festival, Chico, Beto, Bernardo, Marina and 
+// Iara always get together at Marlene's house. And as it couldn't be different, the main dish of this meeting is cassava. 
+// They each eat one to ten servings of cassava and they always advise Marlene in advance as to how many servings they will be eating that day. 
+// The serving sizes of each are different, but they are always the same. The servings are as follows (in grams):
 
 // Chico eats 300
 
@@ -11,10 +15,12 @@
 
 // Iara eats 150
 
-// Marlene, in turn, always eats 225 grams of manioc. Tired of every year having to calculate how much cassava to prepare, she challenged you to write a program that tells you how much cassava should be prepared in grams.
+// Marlene, in turn, always eats 225 grams of manioc. Tired of every year having to calculate how much cassava to prepare, 
+// she challenged you to write a program that tells you how much cassava should be prepared in grams.
 
 // Input
-// The entry consists of 5 integers each representing the portions that Dona Chica's guests will consume. The first integer represents the portions of Chico, the second of Bento, the third of Bernardo, the fourth of Marina and the fifth of Iara.
+// The entry consists of 5 integers each representing the portions that Dona Chica's guests will consume. 
+// The first integer represents the portions of Chico, the second of Bento, the third of Bernardo, the fourth of Marina and the fifth of Iara.
 
 // Exit
 // The output consists of a single integer that represents how much cassava Marlene should prepare in grams.
