@@ -1,3 +1,13 @@
+// Challenge
+// Dividing X by Y
+// Write an algorithm that reads 2 numbers and prints the result of dividing the first by the second. If it is not possible, show the message “impossible division” for the values ​​in question.
+
+// Input
+// The input contains an integer N. This N will be the number of integer value pairs (X and Y) that will be read next.
+
+// Exit
+// For each case, show the result of the division with one digit after the decimal point, or “division impossible” if it is not possible to perform the calculation.
+
 using System;
 	
 	class DividindoXPorY 
