@@ -25,9 +25,11 @@
 // Exit
 // For each test case, the message "Case #t: R" must be printed, where t is the number of the test case (whose count starts at number one) and R is one of Sheldon's three possible reactions: "Bazinga! ", "Raj cheated!", or "Again!".
 
+// Challenge stone, paper, scissors and lizard.
+
 using System;
 
-class Desafio {
+class Challenge {
   static void Main() {
     int limit = int.Parse(Console.ReadLine());
 
@@ -39,73 +41,73 @@ class Desafio {
       string raj = line[1].ToLower();
 
       switch (sheldon) {
-        case "pedra":
+        case "stone":
           switch (raj) {
-            case "lagarto":
-            case "tesoura":
-              Console.WriteLine("Caso #" + i + ": Bazinga!");
+            case "lizard":
+            case "scissors":
+              Console.WriteLine("Case #" + i + ": Bazinga!");
               break;
-            case "pedra":
-              Console.WriteLine("Caso #" + i + ": De novo!");
+            case "stone":
+              Console.WriteLine("Case #" + i + ": Again!");
               break;
             default:
-              Console.WriteLine("Caso #" + i + ": Raj trapaceou!");
+              Console.WriteLine("Case #" + i + ": Raj cheated!");
               break;
           }
           break;
-        case "papel":
+        case "paper":
           switch (raj) {
-            case "pedra":
+            case "stone":
             case "spock":
-              Console.WriteLine("Caso #" + i + ": Bazinga!");
+              Console.WriteLine("Case #" + i + ": Bazinga!");
               break;
-            case "papel":
-              Console.WriteLine("Caso #" + i + ": De novo!");
+            case "paper":
+              Console.WriteLine("Case #" + i + ": Again!");
               break;
             default:
-              Console.WriteLine("Caso #" + i + ": Raj trapaceou!");
+              Console.WriteLine("Case #" + i + ": Raj cheated!");
               break;
           }
           break;
-        case "tesoura":
+        case "scissors":
           switch (raj) {
-            case "papel":
-            case "lagarto":
-              Console.WriteLine("Caso #" + i + ": Bazinga!");
+            case "paper":
+            case "lizard":
+              Console.WriteLine("Case #" + i + ": Bazinga!");
               break;
-            case "tesoura":
-              Console.WriteLine("Caso #" + i + ": De novo!");
+            case "scissors":
+              Console.WriteLine("Case #" + i + ": Again!");
               break;
             default:
-              Console.WriteLine("Caso #" + i + ": Raj trapaceou!");
+              Console.WriteLine("Case #" + i + ": Raj cheated!");
               break;
           }
           break;
-        case "lagarto":
+        case "lizard":
           switch (raj) {
             case "spock":
-            case "papel":
-              Console.WriteLine("Caso #" + i + ": Bazinga!");
+            case "paper":
+              Console.WriteLine("Case #" + i + ": Bazinga!");
               break;
-            case "lagarto":
-              Console.WriteLine("Caso #" + i + ": De novo!");
+            case "lizard":
+              Console.WriteLine("Case #" + i + ": Again!");
               break;
             default:
-              Console.WriteLine("Caso #" + i + ": Raj trapaceou!");
+              Console.WriteLine("Case #" + i + ": Raj cheated!");
               break;
           }
           break;
         case "spock":
           switch (raj) {
-            case "tesoura":
-            case "pedra":
-              Console.WriteLine("Caso #" + i + ": Bazinga!");
+            case "scissors":
+            case "stone":
+              Console.WriteLine("Case #" + i + ": Bazinga!");
               break;
             case "spock":
-              Console.WriteLine("Caso #" + i + ": De novo!");
+              Console.WriteLine("Case #" + i + ": Again!");
               break;
             default:
-              Console.WriteLine("Caso #" + i + ": Raj trapaceou!");
+              Console.WriteLine("Case #" + i + ": Raj cheated!");
               break;
           }
           break;
