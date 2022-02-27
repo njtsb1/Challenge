@@ -1,0 +1,31 @@
+usando  Sistema ;
+usando  Sistema . Coleções . Genérico ;
+
+public class DesafioFiladoBanco {
+  public static void Main() {
+    int  limite  =  int . Analisar ( Console . ReadLine ());
+
+    for ( int  i  =  0 ; i  <  limite ; i ++ ) {
+      if ( i  >  1000 ) return ;
+
+      int  pessoas  =  int . Analisar ( Console . ReadLine ());
+      Lista < int > lista  =  new  Lista < int >();
+      string [] linha  =  Console . LeiaLinha (). Dividir ( "  " );
+
+      foreach ( string  item  na  linha ) {
+        if ( lista.Count > 1000 ) return ; _ _  
+        lista.Add(int.Parse(item));
+      }
+
+      lista.Sort((a, b) => b.CompareTo(a));
+      int quantidade = pessoas;
+
+      for ( int  x  =  0 ; x  <  lista . Contagem ; x ++ ) {
+        if ( int . Parse ( linha [ x ]) !=  lista [ x ]) {
+          quantidade--;
+        }
+      }
+      Console.WriteLine(quantidade);
+    }
+  }
+}
