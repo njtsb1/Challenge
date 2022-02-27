@@ -1,31 +1,33 @@
-usando  Sistema ;
-usando  Sistema . Coleções . Genérico ;
+// Challenge BankQueue
 
-public class DesafioFiladoBanco {
+using System;
+using System.Collections.Generic;
+
+public class BankQueue {
   public static void Main() {
-    int  limite  =  int . Analisar ( Console . ReadLine ());
+    int limit = int.Parse(Console.ReadLine());
 
-    for ( int  i  =  0 ; i  <  limite ; i ++ ) {
-      if ( i  >  1000 ) return ;
+    for (int i = 0; i < limit; i++) {
+      if (i > 1000) return;
 
-      int  pessoas  =  int . Analisar ( Console . ReadLine ());
-      Lista < int > lista  =  new  Lista < int >();
-      string [] linha  =  Console . LeiaLinha (). Dividir ( "  " );
-
-      foreach ( string  item  na  linha ) {
-        if ( lista.Count > 1000 ) return ; _ _  
-        lista.Add(int.Parse(item));
+      int people = int.Parse(Console.ReadLine());
+      List<int> list = new List<int>();
+      string[] line = Console.ReadLine().Split(" ");
+      
+      foreach (string item in line) {
+        if (list.Count > 1000) return;
+        list.Add(int.Parse(item));
       }
 
-      lista.Sort((a, b) => b.CompareTo(a));
-      int quantidade = pessoas;
+      list.Sort((a, b) => b.CompareTo(a));
+      int theamount = people;
 
-      for ( int  x  =  0 ; x  <  lista . Contagem ; x ++ ) {
-        if ( int . Parse ( linha [ x ]) !=  lista [ x ]) {
-          quantidade--;
+      for (int x = 0; x < list.Count; x++) {
+        if (int.Parse(line[x]) != list[x]) {
+          theamount--;
         }
       }
-      Console.WriteLine(quantidade);
+      Console.WriteLine(theamount);
     }
   }
 }
