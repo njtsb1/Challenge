@@ -1,36 +1,36 @@
 using System;
 
-class Desafio {
+class Challenge {
   static void Main() {
-    int notasLidas = 0;
-    bool opcao;
+    int notesRead = 0;
+    bool option;
     double x = 0;
       
-    while (notasLidas < 2) {
-      opcao = true;
-      double nota = double.Parse(Console.ReadLine());
+    while (notesRead < 2) {
+      option = true;
+      double note = double.Parse(Console.ReadLine());
 
-      if (nota < 0 || nota > 10) {
-        Console.WriteLine("nota invalida");
-      } else if (notasLidas == 0) {
-        x = nota;
-        notasLidas++;
-      } else if (notasLidas == 1) {
-        double media = (x + nota) / 2;
+      if (note < 0 || note > 10) {
+        Console.WriteLine("invalid note");
+      } else if (notesRead == 0) {
+        x = note;
+        notesRead++;
+      } else if (notesRead == 1) {
+        double average = (x + note) / 2;
 
-        Console.Write("media = ");
-        Console.WriteLine(media.ToString("N2"));
+        Console.Write("average = ");
+        Console.WriteLine(average.ToString("N2"));
         
-        while (opcao == true){
-          Console.WriteLine("novo calculo (1-sim 2-nao)");
+        while (option == true){
+          Console.WriteLine("new calculation (1-yes 2-no)");
           double res = double.Parse(Console.ReadLine());
 
           if (res ==  1) {
-            opcao = false;
-            notasLidas = 0;
+            option = false;
+            notesRead = 0;
           } else if (res == 2) {
-            opcao = false;
-            notasLidas++;
+            option = false;
+            notesRead++;
           }
         }
       } 
