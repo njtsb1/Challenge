@@ -1,3 +1,3 @@
 # Challenge
 
-Challenges and their resolutions
+Challenges and their resolutions.
