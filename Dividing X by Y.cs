@@ -11,7 +11,7 @@
 
 using System;
 	
-	class DividindoXPorY 
+	class DividingXByY 
 	{    
 	    static void Main(string[] args) 
 	    {
@@ -24,19 +24,19 @@ using System;
 	                
 	                if (Y == 0)
 	                {
-	                    Console.WriteLine("divisao impossivel");
+	                    Console.WriteLine("impossible division");
 	                }
 	                else
 	                {
-	                    double divisao = (double)X / Y;
+	                    double division = (double)X / Y;
 	                    
-	                    if (divisao < 0 && divisao > -0.5)
+	                    if (division < 0 && division > -0.5)
 	                    {
 	                        Console.WriteLine("-0.0");
 	                    }
 	                    else
 	                    {
-	                        Console.WriteLine(Math.Round(divisao, 1).ToString("N1"));
+	                        Console.WriteLine(Math.Round(division, 1).ToString("N1"));
 	                    }
 	                }
 	            }
