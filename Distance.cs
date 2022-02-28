@@ -13,10 +13,10 @@
 
 using System;
 
-class Desafio {
+class Challenge {
     static void Main() {
-        int quilometros = Int32.Parse(Console.ReadLine());
-        int minutos =  quilometros  * 2;
-        Console.WriteLine(minutos + " minutos");
+        int kilometers = Int32.Parse(Console.ReadLine());
+        int minutes =  kilometers  * 2;
+        Console.WriteLine(minutes + " minutes");
     }
 }
