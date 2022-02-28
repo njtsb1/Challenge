@@ -27,7 +27,7 @@
 
 using System;
 
-class QuantaMandioca
+class HowMuchCassava
 {
     static void Main() 
     {
